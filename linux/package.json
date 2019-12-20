@@ -1,0 +1,25 @@
+{
+  "name": "eidos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_CONFIG=`pwd`/config/local.yaml NODE_SECRET=`pwd`/secret/local.yaml ts-node src/eidos.ts",
+    "build": "rm -rf lib && tsc"
+  },
+  "dependencies": {
+    "@pefish/js-coin-eos": "^0.2.0",
+    "@pefish/js-util-config": "^0.2.1",
+    "@pefish/js-util-random": "^0.0.3",
+    "@pefish/js-util-starter": "^0.0.7",
+    "@pefish/js-util-time": "^0.0.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.13.7",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  }
+}
